@@ -24,7 +24,7 @@ class FilmController extends Controller
             'judul' => 'required|string|unique:film',
             'slug' => 'required|string',
             'deskripsi' => 'required|string',
-            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'foto' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'url_vidio' => 'required|string',
             'id_kategoris' => 'required|exists:kategoris,id',
             'genre' => 'required|array',
